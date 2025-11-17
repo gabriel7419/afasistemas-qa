@@ -1,4 +1,4 @@
-## Cenário 01: Rotina de Inventário de Estoque.
+## Cenário 01: Rotina de Inventário de Estoque (Importação).
 
 ### Caso de Teste 01: Importar XML de compra e confirmar estoque (Positivo).
 
@@ -14,19 +14,19 @@
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela inicial do sistema |
-| **E** navega para "Pedido" > "Importar XML de Compra" [cite: 441] |
-| **E** clica em "Importar XML" e seleciona um arquivo XML válido [cite: 477, 504] |
-| **E** clica em "Gerar Compra" após os itens serem carregados [cite: 641] |
-| **E** na tela de "Compra", clica em "Finalizar" [cite: 644] |
-| **E** na tela "Confirmar Compra", muda o "Status" para "CONFIRMADA" [cite: 720, 739] |
-| **E** preenche o "Tipo de Documento" (ex: BOLETO) e salva [cite: 752, 794] |
-| **QUANDO** o usuário clicar em "Salvar" na tela de "Confirmar Compra" [cite: 831, 869] |
-| **ENTÃO** a compra será registrada como "Confirmada" [cite: 873] |
+| **E** navega para "Pedido" > "Importar XML de Compra" |
+| **E** clica em "Importar XML" e seleciona um arquivo XML válido |
+| **E** clica em "Gerar Compra" após os itens serem carregados |
+| **E** na tela de "Compra", clica em "Finalizar" |
+| **E** na tela "Confirmar Compra", muda o "Status" para "CONFIRMADA" |
+| **E** preenche o "Tipo de Documento" (ex: BOLETO) e salva |
+| **QUANDO** o usuário clicar em "Salvar" na tela de "Confirmar Compra" |
+| **ENTÃO** a compra será registrada como "Confirmada" |
 | **E** os itens importados serão adicionados ao estoque do sistema. |
 
 | **Critérios de aceitação** |
 | :--- |
-|  O "Status da Compra" na tela principal de Compra deve mudar para "CONFIRMADA"[cite: 877]. |
+| O "Status da Compra" na tela principal de Compra deve mudar para "CONFIRMADA". |
 
 ---
 
@@ -44,11 +44,11 @@
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela inicial do sistema |
-|  **E** navega para "Pedido" > "Importar XML de Compra" [cite: 441] |
-|  **E** clica em "Importar XML" [cite: 477] |
+| **E** navega para "Pedido" > "Importar XML de Compra" |
+| **E** clica em "Importar XML" |
 | **QUANDO** o usuário seleciona um arquivo `fatura.txt` ou `imagem.png` e clica em "Abrir" |
 | **ENTÃO** o sistema deve exibir uma mensagem de erro informando que o arquivo é inválido |
-|  **E** os "Produtos no XML" não devem ser carregados[cite: 485]. |
+| **E** os "Produtos no XML" não devem ser carregados. |
 
 | **Critérios de aceitação** |
 | :--- |
