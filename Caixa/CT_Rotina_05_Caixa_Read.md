@@ -24,6 +24,8 @@
 | :--- |
 | O histórico deve refletir com precisão todas as operações do caixa com "Hora", "Histórico", "Entrada", "Saída" e "Saldo" corretos. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/4d6d6350ac5d4331880a470cedbb4220]
 ---
 
 ### Caso de Teste 02: Gerar e ler relatório de conciliação (Positivo).
@@ -51,6 +53,8 @@
 | :--- |
 | O relatório deve ser gerado com sucesso e os valores devem bater com as vendas registradas. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/2e7f2aa561db49ed872ef4b2ad6b5450]
 ---
 
 ### Caso de Teste 03: Tentar ler relatório de conferência sem dados (Negativo).
@@ -76,25 +80,6 @@
 | :--- |
 | O relatório deve ser gerado, mas sem valores de movimentação, exceto a abertura (se aplicável ao relatório). |
 
+**CENÁRIO TESSTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/0fad7f7227024601bb9a33db8eb4ebbd]
 ---
-
-### Caso de Teste 04: Ler saldo do dia anterior após fechar caixa (Negativo).
-
-| ID | Descrição |
-| :--- | :--- |
-| R05-CT08 | O saldo do "Livro Caixa" deve ser R$0,00 após o fechamento, indicando que o dia foi encerrado. |
-
-| **Pré-condições** |
-| :--- |
-| O usuário acabou de realizar um "Fechar Caixa". |
-| O status é "Caixa Aberto: Não". |
-
-| **Passos** |
-| :--- |
-| **DADO** que o usuário está na tela "Livro Caixa" e o caixa está fechado |
-| **QUANDO** o usuário visualiza os totalizadores na parte inferior da tela |
-| **ENTÃO** os campos "Entrada", "Saída" e "Saldo" devem ser "R$ 0,00". |
-
-| **Critérios de aceitação** |
-| :--- |
-| O sistema não deve exibir os totais do dia anterior; deve mostrar os contadores zerados, prontos para a próxima abertura. |

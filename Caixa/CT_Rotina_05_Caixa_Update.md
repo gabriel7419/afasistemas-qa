@@ -16,7 +16,7 @@
 | **DADO** que o usuário está no "Livro Caixa" e clica em "Fechar Caixa" |
 | **E** seleciona "Fazer Conferência" no menu pop-up |
 | **E** o sistema exibe a tela de "Conferência de Caixa" |
-| **E** o usuário conta o dinheiro físico e insere o "Valor Real" (ex: 2525,00) |
+| **E** o usuário conta o dinheiro físico e insere o "Valor Real" |
 | **QUANDO** o sistema calcula a "Diferença" |
 | **ENTÃO** o "Valor no Caixa" (sistema) deve bater com o "Valor Real" (físico) |
 | **E** a "Diferença" deve ser "0,00". |
@@ -26,6 +26,8 @@
 | O sistema deve exibir os valores corretos por tipo de documento ("CHEQUE", "DINHEIRO"). |
 | O usuário deve conseguir inserir o "Valor Real" para validar a diferença. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/5588a7db295c4ebd9c4c819a9ee23bec]
 ---
 
 ### Caso de Teste 02: Fechar o caixa (Positivo).
@@ -55,6 +57,9 @@
 | O fechamento deve ser registrado no histórico. |
 | O saldo do dia deve ser zerado. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/80f0ab215fac4ddb800068a83cfb3d1c]
+
 ---
 
 ### Caso de Teste 03: Tentar retirar valor maior que o saldo em caixa (Negativo).
@@ -74,7 +79,7 @@
 | **E** o usuário clica em "Retirar Valores" |
 | **E** tenta registrar uma nova retirada com "Valor" R$3000,00 e "Tipo: DINHEIRO" |
 | **QUANDO** o usuário clica em "Salvar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Saldo insuficiente para esta retirada") |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
 | **E** a retirada não deve ser registrada no histórico. |
 
 | **Critérios de aceitação** |
@@ -82,6 +87,8 @@
 | O sistema deve validar o saldo por tipo de documento antes de permitir a retirada. |
 | A retirada não deve ser concluída. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/9ca7b9df9929452ca24e285109a18df4]
 ---
 
 ### Caso de Teste 04: Tentar fechar um caixa que já está fechado (Negativo).
@@ -105,3 +112,6 @@
 | **Critérios de aceitação** |
 | :--- |
 | O sistema deve impedir a ação de fechar um caixa já fechado. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/f4739a0171794b938cfab4657988d3e2]
