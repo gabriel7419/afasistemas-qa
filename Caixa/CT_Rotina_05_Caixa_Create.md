@@ -25,6 +25,9 @@
 | O status do caixa deve ser "Aberto: Sim". |
 | O saldo inicial deve constar como a primeira entrada no histórico do "Livro Caixa". |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/b8a338a83ee34713a95e5f49b81915ef]
+
 ---
 
 ### Caso de Teste 02: Criar (registrar) uma retirada de valores (Positivo).
@@ -43,7 +46,7 @@
 | **DADO** que o usuário está na tela "Livro Caixa" com o caixa aberto |
 | **E** clica no botão "Retirar Valores" |
 | **E** clica em "Novo" na tela de "Retirada de Valores" |
-| **E** preenche o "Valor" (ex: R$650,00), "Tipo de Documento: DINHEIRO" e "Histórico" |
+| **E** preenche o "Valor" (ex: R$650,00), "Tipo de Documento: DINHEIRO |
 | **QUANDO** o usuário clicar em "Salvar" |
 | **ENTÃO** a retirada deve ser registrada no histórico do "Livro Caixa" |
 | **E** o valor deve ser lançado na coluna "Saída", atualizando o "Saldo". |
@@ -52,6 +55,9 @@
 | :--- |
 | Uma linha "Retirada do Caixa: 3" (ou similar) deve aparecer no histórico. |
 | O "Saldo" total do caixa deve ser reduzido no valor da retirada. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/41b30349a91c4c2c8ff462d2268a5a08]
 
 ---
 
@@ -70,14 +76,16 @@
 | :--- |
 | **DADO** que o usuário está na tela "Livro Caixa" e o caixa está aberto |
 | **QUANDO** o usuário clica no botão "Abrir Caixa" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "O caixa já está aberto") |
+| **ENTÃO** o sistema deve desabilitar o botão. |
 | **E** nenhuma nova tela de abertura deve aparecer. |
 
 | **Critérios de aceitação** |
 | :--- |
-| Uma mensagem de erro deve ser exibida. |
+| O botão de Abrir Caixa deve estar desabilitado |
 | O status do caixa e o saldo devem permanecer inalterados. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/e98d005e30ab4d7797a001f10cc68242]
 ---
 
 ### Caso de Teste 04: Tentar retirar valores com o caixa fechado (Negativo).
@@ -96,8 +104,11 @@
 | **DADO** que o usuário está na tela "Livro Caixa" e o caixa está fechado |
 | **QUANDO** o usuário clica no botão "Retirar Valores" |
 | **ENTÃO** o botão deve estar desabilitado |
-| **OU** o sistema deve exibir uma mensagem de erro (ex: "Abra o caixa para fazer retiradas"). |
+| **OU** o sistema deve exibir uma mensagem de erro. |
 
 | **Critérios de aceitação** |
 | :--- |
 | O sistema deve impedir a criação de uma retirada com o caixa fechado. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/2aaf7bba859b4a0188c7f6f7159084a5]

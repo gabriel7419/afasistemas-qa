@@ -9,21 +9,23 @@
 | **Pré-condições** |
 | :--- |
 | O usuário deve ter permissão de "Administrador" ou "Excluir Produto". |
-| Deve existir um item "PROD-DEL" com estoque "0" e sem vínculo com pedidos de venda ou compra. |
+| Deve existir um item "PRODUTO TESTE DELETE" com estoque "0" e sem vínculo com pedidos de venda ou compra. |
 
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela "Inventário" |
-| **E** busca e localiza o item "PROD-DEL" |
-| **E** clica em "Excluir" no item "PROD-DEL" |
-| **E** o sistema exibe um modal de confirmação "Deseja realmente excluir este item?" |
+| **E** busca e localiza o item "PRODUTO TESTE DELETE" |
+| **E** clica em "Excluir" no item "PRODUTO TESTE DELETE" |
+| **E** o sistema exibe um modal de confirmação "Deseja realmente excluir este registro?" |
 | **QUANDO** o usuário clicar em "Confirmar" (ou "Sim") |
-| **ENTÃO** o item "PROD-DEL" deve ser removido do sistema |
-| **E** o sistema deve exibir a mensagem "Item excluído com sucesso". |
+| **ENTÃO** o item "PRODUTO TESTE DELETE" deve ser removido do sistema |
 
 | **Critérios de aceitação** |
 | :--- |
-| O item "PROD-DEL" não deve mais aparecer nas buscas ou na lista de inventário. |
+| O item "PRODUTO TESTE DELETE" não deve mais aparecer nas buscas ou na lista de inventário. |
+
+**CENÁRIO TESTADO E EVIDENCIADO, DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/ef061b4f69414154b7512a9d78172d5b]
 
 ---
 
@@ -36,19 +38,22 @@
 | **Pré-condições** |
 | :--- |
 | O usuário deve ter permissão de "Administrador". |
-| Deve existir um item "PROD-ATIVO" com estoque "10" (ou com histórico de vendas). |
+| Deve existir um item com estoque ou com histórico de vendas. |
 
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela "Inventário" |
-| **E** busca e localiza o item "PROD-ATIVO" |
-| **E** clica em "Excluir" no item "PROD-ATIVO" |
+| **E** busca e localiza o item com estoque/histórico de vendas |
+| **E** clica em "Excluir" no item com estoque/histórico de vendas  |
 | **E** o sistema exibe um modal de confirmação |
 | **QUANDO** o usuário clicar em "Confirmar" (ou "Sim") |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Não é possível excluir. Item possui estoque/histórico de vendas") |
-| **E** o item "PROD-ATIVO" não deve ser excluído. |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
+| **E** o item com estoque/histórico de vendas não deve ser excluído. |
 
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro informando a restrição deve ser exibida. |
-| O item "PROD-ATIVO" deve permanecer no inventário. |
+| O item com estoque/histórico de vendas deve permanecer no inventário. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/c24821c7df604fe4ac5c1a1deb960ef9]

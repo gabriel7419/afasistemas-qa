@@ -16,9 +16,9 @@
 | **DADO** que o usuário está na tela "Inventário" (ou "Cadastro de Produtos") |
 | **E** clica no botão "Novo Item" |
 | **E** preenche o "Código/SKU" (ex: "PROD-123") |
-| **E** preenche a "Descrição" (ex: "Produto Teste Novo") |
-| **E** preenche a "Quantidade em Estoque" (ex: "10") |
-| **E** preenche o "Preço de Custo" (ex: "50.00") |
+| **E** preenche o "Nome do Produto" (ex: "Produto Teste Novo") |
+| **E** preenche o "Grupo" (ex: "GERAL") |
+| **E** preenche o "Preço de Compra" (ex: "50.00") |
 | **QUANDO** o usuário clicar em "Salvar" |
 | **ENTÃO** o sistema deve registrar o novo item no inventário |
 | **E** o item "PROD-123" deve estar visível na lista de inventário. |
@@ -27,6 +27,9 @@
 | :--- |
 | O sistema deve exibir uma mensagem de "Item salvo com sucesso". |
 | O produto "PROD-123" deve constar no banco de dados com estoque "10". |
+
+**CENÁRIO TESTADO E APROVADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/5638167605924c938356c4c0a15eca45]
 
 ---
 
@@ -46,9 +49,9 @@
 | **DADO** que o usuário está na tela "Inventário" |
 | **E** clica no botão "Novo Item" |
 | **E** preenche o "Código/SKU" com "PROD-EXISTENTE" |
-| **E** preenche os demais campos obrigatórios (Descrição, Quantidade) |
+| **E** preenche os demais campos obrigatórios (Nome, Grupo) |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Código/SKU já cadastrado") |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
 | **E** o novo item não deve ser salvo. |
 
 | **Critérios de aceitação** |

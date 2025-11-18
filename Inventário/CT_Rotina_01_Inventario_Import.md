@@ -28,6 +28,9 @@
 | :--- |
 | O "Status da Compra" na tela principal de Compra deve mudar para "CONFIRMADA". |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+[https://www.loom.com/share/02d1fa537eba4b969eed06a7ca65d421]
+
 ---
 
 ### Caso de Teste 02: Tentar importar arquivo inválido (Negativo).
@@ -38,7 +41,7 @@
 
 | **Pré-condições** |
 | :--- |
-| O usuário deve ter um arquivo inválido (ex: `.txt` ou `.png`). |
+| O usuário deve ter um arquivo inválido/corrompido. |
 | O usuário deve ter permissão para acessar o menu "Pedido". |
 
 | **Passos** |
@@ -46,7 +49,7 @@
 | **DADO** que o usuário está na tela inicial do sistema |
 | **E** navega para "Pedido" > "Importar XML de Compra" |
 | **E** clica em "Importar XML" |
-| **QUANDO** o usuário seleciona um arquivo `fatura.txt` ou `imagem.png` e clica em "Abrir" |
+| **QUANDO** o usuário seleciona um arquivo em outro formato ou corrompido e clica em "Abrir" |
 | **ENTÃO** o sistema deve exibir uma mensagem de erro informando que o arquivo é inválido |
 | **E** os "Produtos no XML" não devem ser carregados. |
 
@@ -54,3 +57,6 @@
 | :--- |
 | Uma mensagem de erro (ex: "Arquivo XML inválido" ou "Formato não suportado") deve ser exibida. |
 | A lista "Produtos no XML" deve permanecer vazia. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/07e46d5493b149c2839ca054d9fb5b8e]

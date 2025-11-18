@@ -1,56 +1,59 @@
 ## Cenário 04: Rotina de Inventário (CRUD - Update).
 
-### Caso de Teste 01: Ajustar manualmente o estoque (Positivo).
+### Caso de Teste 01: Atualizar o nome de produto (Positivo).
 
 | ID | Descrição |
 | :--- | :--- |
-| R04-CT01 | Atualizar a quantidade em estoque de um item existente (ex: ajuste de balanço). |
+| R04-CT01 | Atualizar o nome de um produto existente|
 
 | **Pré-condições** |
 | :--- |
-| O usuário deve ter permissão para "Ajuste de Inventário" ou "Editar Produto". |
-| Deve existir um item "PROD-789" com estoque atual de "50". |
+| O usuário deve ter permissão para acessar "Alterar". |
+| Deve existir um item "36" com o nome de "Produto Teste Novo"". |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário está na tela "Inventário" |
-| **E** busca e localiza o item "PROD-789" |
-| **E** clica em "Editar" (ou "Ajustar Estoque") no item "PROD-789" |
-| **E** no campo "Nova Quantidade" (ou "Ajuste"), digita "55" |
-| **E** preenche o campo "Motivo" (ex: "Contagem de balanço") |
+| **DADO** que o usuário está na tela "Produto" |
+| **E** busca e localiza o item "36" |
+| **E** clica em "Alterar" no item 36" |
+| **E** no campo "Nome do Produto", digita "Calça Jeans" |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o estoque do item "PROD-789" deve ser atualizado para "55" |
-| **E** um registro de log de movimentação de estoque deve ser criado. |
+| **ENTÃO** o nome do item 36" deve ser atualizado para "Calça Jeans" |
+| **E** o novo nome deve ser possível de ser visualizado na listagem. |
 
 | **Critérios de aceitação** |
 | :--- |
-| O sistema deve exibir "Estoque atualizado com sucesso". |
-| Ao consultar o item "PROD-789" novamente, o estoque exibido deve ser "55". |
+| Ao consultar o item 36, o nome deve estar devidamente atualizado. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/c59d4f8279ab476795b00862377568de]
 ---
 
-### Caso de Teste 02: Tentar atualizar estoque com valor inválido (Negativo).
+### Caso de Teste 02: Tentar atualizar o nome de um produto com caracteres inválidos.
 
 | ID | Descrição |
 | :--- | :--- |
-| R04-CT02 | O sistema não deve permitir a atualização do estoque com dados não numéricos. |
+| R04-CT02 | O sistema não deve permitir a atualização do nome com caracteres inválidos. |
 
 | **Pré-condições** |
 | :--- |
-| O usuário deve ter permissão para "Ajuste de Inventário". |
-| Deve existir um item "PROD-789". |
+| O usuário deve ter permissão para "Alterar" informações de um produto. |
+| Deve existir um item "36". |
 
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela "Inventário" |
-| **E** busca e localiza o item "PROD-789" |
-| **E** clica em "Editar" (ou "Ajustar Estoque") |
-| **E** no campo "Nova Quantidade", digita "ABC" (um valor não numérico) |
+| **E** busca e localiza o item "36" |
+| **E** clica em "Alterar" |
+| **E** no campo "Nome do Produto", digita "{*}" (caracteres inválidos) |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Valor inválido. Insira apenas números") |
-| **E** o estoque do item "PROD-789" não deve ser alterado. |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Insira o nome do produto") |
+| **E** o nome do item "36" não deve ser alterado. |
 
 | **Critérios de aceitação** |
 | :--- |
-| Uma mensagem de erro de validação de campo deve ser exibida. |
-| O estoque do item deve permanecer inalterado. |
+| O sistema não deve aceitar os caracteres inválidos inseridos, deixando o campo em branco |
+| O nome do item não será alterado e o sistema deve solicitar a inserção de um novo nome. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/d97b1d5747164f3da66b8adb12f7aa00]

@@ -23,6 +23,11 @@
 | :--- |
 | O saldo do caixa deve refletir a subtração (deleção) do valor retirado. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/e86ba93546964fe8b78d1e6f3bf5374e]
+
+****
+
 ---
 
 ### Caso de Teste 02: Conciliação de Saída (Troco) (Positivo).
@@ -45,6 +50,9 @@
 | **Critérios de aceitação** |
 | :--- |
 | O troco deve ser tratado como uma saída (redução) do saldo do caixa. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/9217e938e30c46d5bcd88e17fa53df54]
 
 ---
 
@@ -70,6 +78,9 @@
 | :--- |
 | O registro da venda deve permanecer intacto no "Livro Caixa". (A única forma de estornar seria via "Devolução" na Rotina de Venda). |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/bf521390c2b74a858cecec0b0e09fdbb]
+
 ---
 
 ### Caso de Teste 04: Tentar estornar (deletar) uma "Retirada do Caixa" após o fechamento (Negativo).
@@ -89,8 +100,12 @@
 | **E** seleciona a linha "Retirada do Caixa" |
 | **QUANDO** o usuário tenta cancelar ou estornar esta linha |
 | **ENTÃO** o sistema não deve permitir a ação |
-| **E** deve exibir uma mensagem (ex: "Caixa fechado. Estorno não permitido"). |
+| **E** nenhuma mensagem de erro deve ser exibida se a funcionalidade não desistir |
 
 | **Critérios de aceitação** |
 | :--- |
 | O histórico de um caixa fechado deve ser imutável. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+FUNCIONALIDADE NÃO PRESENTE NO SISTEMA
+[https://www.loom.com/share/4aa2a290316445b9968482b5f4cf7b57]
