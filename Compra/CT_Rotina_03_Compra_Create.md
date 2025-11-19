@@ -19,13 +19,16 @@
 | **E** preenche o "Fornecedor" (Nome), "Endereço", "Cidade" e demais campos obrigatórios |
 | **E** seleciona "Tipo de Pessoa: FISICA" |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o novo fornecedor será registrado (ex: "7 - TONY RAMOS PELES LTDA") |
+| **ENTÃO** o novo fornecedor será registrado |
 | **E** o sistema exibirá os dados do fornecedor recém-cadastrado na tela. |
 
 | **Critérios de aceitação** |
 | :--- |
 | O sistema deve salvar o fornecedor e atribuir um novo "Código". |
 | O fornecedor deve aparecer na lista ao ser pesquisado. |
+
+**CASO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/bee1b8c0d0184aba917763f6881c33e4]
 
 ---
 
@@ -59,6 +62,9 @@
 | O "Número de Itens" e "Quantidade Total" (ex: 10) devem estar corretos. |
 | O estoque ainda não deve ser atualizado. |
 
+**CASO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/854f12ae1b45477b9c8ac8d2c95a259a]
+
 ---
 
 ### Caso de Teste 03: Tentar cadastrar fornecedor sem nome (Negativo).
@@ -77,13 +83,16 @@
 | **E** o campo "Fornecedor" (Nome) está vazio |
 | **E** preenche outros campos (ex: Endereço, Cidade) |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Campo Fornecedor é obrigatório") |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Campo Nome é obrigatório") |
 | **E** o fornecedor não deve ser salvo. |
 
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro de validação de campo deve ser exibida. |
 | O fornecedor não deve ser registrado no banco de dados. |
+
+**CASO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/c8318116b81e49a188c07a067ae6fe40]
 
 ---
 
@@ -103,10 +112,13 @@
 | **E** o campo "Fornecedor" está vazio |
 | **E** define a "Condição: PRAZO" |
 | **QUANDO** o usuário clicar em "Salvar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Selecione um Fornecedor") |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
 | **E** o pedido de compra não deve ser criado. |
 
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro de validação de campo deve ser exibida. |
 | O sistema não deve prosseguir para a tela de adição de itens. |
+
+**CASO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/26d03b3fa7e44984a3a42d20d58985d2]

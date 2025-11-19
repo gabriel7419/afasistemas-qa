@@ -4,7 +4,7 @@
 
 | ID | Descrição |
 | :--- | :--- |
-| R03-CT05 | Buscar e visualizar os dados de um fornecedor já cadastrado. |
+| R03-CT05 | Buscar e visualizar os dados deCompra - Delete | Caminho inFeliz 1 um fornecedor já cadastrado. |
 
 | **Pré-condições** |
 | :--- |
@@ -21,6 +21,9 @@
 | **Critérios de aceitação** |
 | :--- |
 | O sistema deve exibir todos os dados gravados do fornecedor. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/53e9e39adf3a49e7876b576ce2bd5179]
 
 ---
 
@@ -47,6 +50,9 @@
 | :--- |
 | A tela deve exibir corretamente as parcelas geradas, com valores e vencimentos. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/ab23c05c3fd442abaf10ca7478112392]
+
 ---
 
 ### Caso de Teste 03: Tentar consultar fornecedor inexistente (Negativo).
@@ -72,6 +78,9 @@
 | :--- |
 | Uma mensagem de erro "não encontrado" deve ser exibida. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/c6d8c8b0d8c841d79b88b2785016e384]
+
 ---
 
 ### Caso de Teste 04: Tentar consultar pedido de compra inexistente (Negativo).
@@ -96,3 +105,6 @@
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro "não encontrado" deve ser exibida. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/dec1fe06c1704805a6b4e2797bd15e33]

@@ -9,11 +9,11 @@
 | **Pré-condições** |
 | :--- |
 | O usuário está na tela "Cadastro de Fornecedores". |
-| Existe um fornecedor cadastrado (ex: "Fornecedor Teste") sem histórico de compras. |
+| Existe um fornecedor cadastrado (ex: "Fornecedor Teste Delete") sem histórico de compras. |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário localizou o "Fornecedor Teste" |
+| **DADO** que o usuário localizou o "Fornecedor Teste Delete" |
 | **E** clica no botão "Excluir" |
 | **E** confirma a exclusão na janela pop-up |
 | **QUANDO** a operação é confirmada |
@@ -22,6 +22,9 @@
 | **Critérios de aceitação** |
 | :--- |
 | O fornecedor não deve mais ser encontrado na busca. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/363d30dac6b7451d83fd91b116f1a34b]
 
 ---
 
@@ -49,6 +52,8 @@
 | :--- |
 | O pedido de compra deve ser excluído do banco de dados. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/e8d36021feea4ebbaa61f7f04bb5ebc2]
 ---
 
 ### Caso de Teste 03: Tentar excluir fornecedor com vínculo (Negativo).
@@ -75,6 +80,9 @@
 | Uma mensagem de erro de integridade referencial deve ser exibida. |
 | O fornecedor deve permanecer no sistema. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/81e7817b0b3f40bfb52463a1b714a9b9]
+
 ---
 
 ### Caso de Teste 04: Tentar excluir pedido de compra confirmado (Negativo).
@@ -99,3 +107,6 @@
 | :--- |
 | O pedido de compra deve permanecer no sistema. |
 | O estoque e o "Contas a Pagar" não devem ser afetados. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/8701227ed47c4298b5d6126ddd0970fc]

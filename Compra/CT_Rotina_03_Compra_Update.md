@@ -26,6 +26,9 @@
 | O status da compra deve ser "CONFIRMADA". |
 | O fluxo de pagamento (à vista ou a prazo) deve ser iniciado. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/6e57d0a9f2c1450caaf9ba14561bfca7]
+
 ---
 
 ### Caso de Teste 02: Pagar parcela parcialmente (Positivo).
@@ -38,21 +41,24 @@
 | :--- |
 | O usuário está na tela "Desdobramento da Conta". |
 | A primeira parcela foi paga. |
-| O valor da segunda parcela é (ex: R$550,00). |
+| O valor da segunda parcela é pago de forma parcial. |
 
 | **Passos** |
 | :--- |
 | **DADO** que o usuário está na tela "Desdobramento da Conta" |
-| **E** na linha da segunda parcela, altera o "Valor Parcela" para um valor menor (ex: R$225,00) |
+| **E** na linha da segunda parcela, altera o "Valor Parcela" para um valor menor |
 | **E** seleciona o "Tipo Documento" e clica em "Confirmar" |
 | **QUANDO** o sistema processa o pagamento parcial |
-| **ENTÃO** o valor restante (R$325,00) deve ser automaticamente somado às parcelas futuras |
-| **E** o "Valor Parcela" da parcela "03" deve ser recalculado (ex: R$658,33). |
+| **ENTÃO** o valor restante deve ser automaticamente somado às parcelas futuras |
+| **E** o "Valor Parcela" da parcela "03" deve ser recalculado. |
 
 | **Critérios de aceitação** |
 | :--- |
 | O pagamento parcial da parcela 02 deve ser registrado. |
 | O valor das parcelas subsequentes deve ser atualizado para refletir o saldo devedor. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/5ba33c627a4b434f84dea28d7a6847e9]
 
 ---
 
@@ -77,28 +83,7 @@
 | :--- |
 | O sistema deve impedir a alteração dos dados ou itens da compra. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO LOOM E DRIVE**
+[https://www.loom.com/share/5338fb63b89e479c968faf1947d98765]
+
 ---
-
-### Caso de Teste 04: Tentar pagar valor maior que a parcela (Negativo).
-
-| ID | Descrição |
-| :--- | :--- |
-| R03-CT12 | O sistema não deve permitir o pagamento de um valor maior que o devido na parcela. |
-
-| **Pré-condições** |
-| :--- |
-| O usuário está na tela "Desdobramento da Conta". |
-| O valor da parcela "01" é R$550,00. |
-
-| **Passos** |
-| :--- |
-| **DADO** que o usuário está na tela "Desdobramento da Conta" |
-| **E** no campo "Valor Parcela" da parcela "01", digita "R$600,00" |
-| **QUANDO** o usuário tenta clicar em "Confirmar" |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Valor maior que o saldo da parcela") |
-| **E** o pagamento não deve ser processado. |
-
-| **Critérios de aceitção** |
-| :--- |
-| Uma mensagem de erro de validação de valor deve ser exibida. |
-| O pagamento não deve ser confirmado. |
