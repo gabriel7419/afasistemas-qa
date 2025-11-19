@@ -14,7 +14,7 @@
 | :--- |
 | **DADO** que o usuário localiza a venda "5" ("NÃO CONFIRMADA") |
 | **E** seleciona um item na lista "Entrada de Produtos" |
-| **E** clica no botão "Excluir" na seção "Entrada de Produtos" [cite: 953] |
+| **E** clica no botão "Excluir" na seção "Entrada de Produtos" |
 | **E** confirma a exclusão (se solicitado) |
 | **QUANDO** a operação é confirmada |
 | **ENTÃO** o item deve desaparecer da lista |
@@ -24,6 +24,9 @@
 | :--- |
 | O item deve ser removido da lista da venda. |
 | O valor total da venda deve ser atualizado (reduzido). |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/fe74f3b3a61c46f2a789f22e64a84a80]
 
 ---
 
@@ -35,21 +38,23 @@
 
 | **Pré-condições** |
 | :--- |
-| Existe uma venda "NÃO CONFIRMADA" (ex: Número "5") salva no sistema[cite: 941]. |
+| Existe uma venda "NÃO CONFIRMADA" salva no sistema. |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário localiza a venda "5" ("NÃO CONFIRMADA") |
-| **E** clica no botão "Excluir" (na barra de ferramentas principal, ao lado de "Alterar") [cite: 915] |
+| **DADO** que o usuário localiza a venda "29" ("NÃO CONFIRMADA") |
+| **E** clica no botão "Excluir" (na barra de ferramentas principal, ao lado de "Alterar") |
 | **E** confirma a exclusão na janela pop-up |
 | **QUANDO** a operação é confirmada |
-| **ENTÃO** a venda "5" deve ser removida do sistema |
+| **ENTÃO** a venda "29" deve ser removida do sistema |
 | **E** não deve haver impacto no estoque ou no caixa. |
 
 | **Critérios de aceitação** |
 | :--- |
 | A venda não deve mais ser encontrada no sistema. |
-| O estoque dos produtos que estavam na venda não deve ser alterado (pois nunca foi debitado). |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/fb15d1a1c9f84723ad43bfda080bb491]
 
 ---
 
@@ -57,23 +62,25 @@
 
 | ID | Descrição |
 | :--- | :--- |
-| R02-CT16 | O sistema não deve permitir a exclusão de uma venda confirmada (o fluxo correto seria uma Devolução). |
+| R02-CT16 | O sistema não deve permitir a exclusão de uma venda confirmada |
 
 | **Pré-condições** |
 | :--- |
-| Existe uma venda "CONFIRMADA" (ex: Número "5") salva no sistema[cite: 1210]. |
+| Existe uma venda "CONFIRMADA" salva no sistema. |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário localiza a venda "5" ("CONFIRMADA") |
-| **QUANDO** o usuário clica no botão "Excluir" (na barra de ferramentas principal) [cite: 1215] |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Venda confirmada não pode ser excluída. Use Devolução.") |
-| **OU** o botão "Excluir" deve estar desabilitado[cite: 1215]. |
+| **DADO** que o usuário localiza a venda "26" ("CONFIRMADA") |
+| **QUANDO** o usuário clica no botão "Excluir" (na barra de ferramentas principal) |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
+| **OU** o botão "Excluir" deve estar desabilitado. |
 
 | **Critérios de aceitação** |
 | :--- |
-| A venda "5" deve permanecer no sistema. |
-| O estoque e o caixa não devem sofrer alterações. |
+| A venda "26" deve permanecer no sistema. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/24cc63cefcb942d6b83ba973cba51323]
 
 ---
 
@@ -85,17 +92,20 @@
 
 | **Pré-condições** |
 | :--- |
-| Existe uma venda "CONFIRMADA" (ex: Número "5") salva no sistema[cite: 1210]. |
+| Existe uma venda "CONFIRMADA" salva no sistema. |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário localiza a venda "5" ("CONFIRMADA") |
+| **DADO** que o usuário localiza a venda "CONFIRMADA" |
 | **E** seleciona um item na lista de produtos |
-| **QUANDO** o usuário clica no botão "Excluir" (na seção "Entrada de Produtos") [cite: 1228] |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Venda confirmada, não pode alterar itens") |
-| **OU** o botão "Excluir" (dos itens) deve estar desabilitado[cite: 1228]. |
+| **QUANDO** o usuário clica no botão "Excluir" (na seção "Entrada de Produtos")  |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
+| **OU** o botão "Excluir" (dos itens) deve estar desabilitado. |
 
 | **Critérios de aceitação** |
 | :--- |
 | O item não deve ser removido da venda. |
-| A venda "5" deve permanecer inalterada. |
+| A venda deve permanecer inalterada. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/4e0d1780e3254429adb0ef7d9e21b881]

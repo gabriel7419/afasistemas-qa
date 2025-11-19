@@ -4,33 +4,36 @@
 
 | ID | Descrição |
 | :--- | :--- |
-| R02-CT01 |  Registrar uma nova venda à vista com 5 itens, aplicar desconto e finalizar com pagamento misto (Cartão + Dinheiro)[cite: 770]. |
+| R02-CT01 |  Registrar uma nova venda à vista com 5 itens, aplicar desconto geral e finalizar com pagamento misto (Cartão + Dinheiro). |
 
 | **Pré-condições** |
 | :--- |
-| O usuário deve ter permissão para acessar o menu "Venda"[cite: 775]. |
-| O caixa deve estar aberto[cite: 1257]. |
+| O usuário deve ter permissão para acessar o menu "Venda". |
+| O caixa deve estar aberto. |
 | Devem existir 5 produtos com estoque positivo. |
 
 | **Passos** |
 | :--- |
-|  **DADO** que o usuário está na tela "Venda" e clica em "Novo" [cite: 810] |
-|  **E** preenche o "Cliente", "Funcionário" e "Condição: VISTA" e clica em "Salvar" [cite: 866-868, 884] |
-|  **E** adiciona 5 produtos diferentes à venda [cite: 912, 968] |
-|  **E** clica em "Finalizar" [cite: 969] |
-|  **E** na tela "Confirmar Venda", aplica um "Desconto" (ex: 10%) [cite: 1019-1020] |
-|  **E** adiciona um "Tipo de Documento" (ex: CARTÃO CREDITO) com 70% do valor [cite: 1114] |
-|  **E** adiciona um segundo "Tipo de Documento" (ex: DINHEIRO) com os 30% restantes [cite: 1143, 1146] |
-|  **E** muda o "Status" para "CONFIRMADA" [cite: 1159, 1185] |
-|  **QUANDO** o usuário clicar em "Salvar" [cite: 1162, 1202] |
-|  **ENTÃO** a venda será registrada como "CONFIRMADA" [cite: 1208, 1210] |
+|  **DADO** que o usuário está na tela "Venda" e clica em "Novo" |
+|  **E** preenche o "Cliente", "Funcionário" e "Condição: VISTA" e clica em "Salvar" |
+|  **E** adiciona 5 produtos diferentes à venda |
+|  **E** clica em "Finalizar" |
+|  **E** na tela "Confirmar Venda", aplica um "Desconto" (ex: 10%) |
+|  **E** adiciona um "Tipo de Documento" (ex: CARTÃO CREDITO) com 70% do valor |
+|  **E** adiciona um segundo "Tipo de Documento" (ex: DINHEIRO) com os 30% restantes |
+|  **E** muda o "Status" para "CONFIRMADA" |
+|  **QUANDO** o usuário clicar em "Salvar" |
+|  **ENTÃO** a venda será registrada como "CONFIRMADA" |
 |  **E** o estoque dos 5 produtos será debitado. |
 
 | **Critérios de aceitação** |
 | :--- |
-| O sistema deve exibir "Status da Venda: CONFIRMADA" na tela principal[cite: 1241]. |
-| A "Diferença" na tela de confirmação deve ser "R$0,00"[cite: 1195]. |
+| O sistema deve exibir "Status da Venda: CONFIRMADA" na tela principal. |
+| A "Diferença" na tela de confirmação deve ser "R$0,00". |
 | O estoque dos itens vendidos deve ser reduzido. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/da983cd84de54f6ea1f4a90e20f64dfb]
 
 ---
 
@@ -43,26 +46,29 @@
 | **Pré-condições** |
 | :--- |
 | O usuário deve ter permissão para "Venda". |
-| Deve existir um cliente com limite de crédito habilitado (conforme Rotina 4)[cite: 2208]. |
+| Deve existir um cliente com limite de crédito habilitado. |
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário está na tela "Venda" e clica em "Novo" [cite: 810] |
-| **E** preenche o "Cliente", "Funcionário" e define a "Condição: PRAZO" [cite: 2380] |
+| **DADO** que o usuário está na tela "Venda" e clica em "Novo" |
+| **E** preenche o "Cliente", "Funcionário" e define a "Condição: PRAZO" |
 | **E** clica em "Salvar" |
 | **E** adiciona um ou mais produtos à venda |
-| **E** clica em "Finalizar" [cite: 969] |
-| **E** na tela "Confirmar Venda", muda o "Status" para "CONFIRMADA" [cite: 2380] |
+| **E** clica em "Finalizar" |
+| **E** na tela "Confirmar Venda", muda o "Status" para "CONFIRMADA" |
 | **E** não adiciona "Tipo de Documento" (pois é a prazo) |
-| **QUANDO** o usuário clicar em "Salvar" [cite: 2380, 2407] |
+| **QUANDO** o usuário clicar em "Salvar"|
 | **ENTÃO** a venda será registrada como "CONFIRMADA" |
-| **E** o sistema deve abrir a tela de "Contas a Receber" para gerar a pendência[cite: 2411]. |
+| **E** o sistema deve abrir a tela de "Contas a Receber" para gerar a pendência. |
 
 | **Critérios de aceitação** |
 | :--- |
 | A venda deve ser confirmada. |
-| O sistema deve automaticamente direcionar para a tela "Contas a Receber"[cite: 2411]. |
-| O valor da venda deve constar como "Total a Receber" para o cliente[cite: 2444]. |
+| O sistema deve automaticamente direcionar para a tela "Contas a Receber". |
+| O valor da venda deve constar como "Total a Receber" para o cliente. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/a914e43ec76d40e48edb9aed86910818]
 
 ---
 
@@ -78,11 +84,11 @@
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário está na tela "Venda" e clica em "Novo" [cite: 810] |
+| **DADO** que o usuário está na tela "Venda" e clica em "Novo" |
 | **E** o campo "Cliente" está vazio |
-| **E** preenche o "Funcionário" [cite: 866-867] |
-| **QUANDO** o usuário clicar em "Salvar" [cite: 884] |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Cliente é obrigatório") |
+| **E** preenche o "Funcionário" |
+| **QUANDO** o usuário clicar em "Salvar" |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro  |
 | **E** a venda não deve ser criada. |
 
 | **Critérios de aceitação** |
@@ -90,6 +96,8 @@
 | Uma mensagem de erro de validação de campo deve ser exibida. |
 | A venda não deve ser salva e o "Status" deve permanecer "NÃO CONFIRMADA". |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/fbd966c8863545d28aa5a2ad3cc8d35b]
 ---
 
 ### Caso de Teste 04: Tentar finalizar venda sem adicionar produtos (Negativo).
@@ -104,14 +112,17 @@
 
 | **Passos** |
 | :--- |
-| **DADO** que o usuário está na tela "Venda" e clica em "Novo" [cite: 810] |
-| **E** preenche o "Cliente" e "Funcionário" e clica em "Salvar" [cite: 884] |
+| **DADO** que o usuário está na tela "Venda" e clica em "Novo" |
+| **E** preenche o "Cliente" e "Funcionário" e clica em "Salvar"|
 | **E** a lista "Entrada de Produtos" está vazia |
-| **QUANDO** o usuário clicar em "Finalizar" [cite: 969] |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Venda sem itens") |
+| **QUANDO** o usuário clicar em "Finalizar" |
+| **ENTÃO** o sistema deve exibir uma mensagem de erro |
 | **E** a tela "Confirmar Venda" não deve ser aberta. |
 
 | **Critérios de aceitação** |
 | :--- |
-| Uma mensagem de erro informando a falta de itens deve ser exibida. |
+| Uma mensagem de alerta informando a falta de itens deve ser exibida. |
 | A venda deve permanecer "NÃO CONFIRMADA". |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E NO LOOM**
+[https://www.loom.com/share/6cda4050e0ca48b1916e8de0a9be67aa]
