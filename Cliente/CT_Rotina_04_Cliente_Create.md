@@ -26,6 +26,9 @@
 | O sistema deve salvar o cliente e atribuir um novo "Código". |
 | O cliente deve aparecer na lista ao ser pesquisado. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/7ee792b30ebe4c7fb56d5a5a8200e826]
+
 ---
 
 ### Caso de Teste 02: Cadastrar novo cliente Pessoa Jurídica (Positivo).
@@ -51,6 +54,9 @@
 | :--- |
 | O sistema deve salvar o cliente com os campos de PJ (CNPJ, Razão Social) corretos. |
 | O "Tipo Pessoa" deve estar salvo como "JURÍDICA". |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/d6690741a60f4f928c31d0a2b04e1b1a]
 
 ---
 
@@ -78,6 +84,9 @@
 | Uma mensagem de erro de validação de campo deve ser exibida. |
 | O cliente não deve ser registrado no banco de dados. |
 
+**CENÁRIO EVIDENCIADO E TESTADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/a3454f55acbd49998a60360fc24b2f63]
+
 ---
 
 ### Caso de Teste 04: Tentar cadastrar dependente sem dados (Negativo).
@@ -102,3 +111,6 @@
 | :--- |
 | Uma mensagem de erro de validação de campo deve ser exibida. |
 | O dependente não deve ser associado ao cliente. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE E LOOM**
+[https://www.loom.com/share/c27000a822884d85b11a1ffa1c6732ca]
