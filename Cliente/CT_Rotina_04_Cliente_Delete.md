@@ -24,6 +24,7 @@
 | O cliente não deve mais ser encontrado na busca. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+[https://drive.google.com/file/d/15JSBbEgYwtT8Vv6gCcsuNN4zW-yGw_X7/view?usp=drive_link]
 
 ---
 
@@ -52,6 +53,8 @@
 | O dependente não deve mais estar associado ao cliente. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+[https://drive.google.com/file/d/1XEL0Y387b3l3YF2QZwG2lIGgpAq038Hi/view?usp=sharing]
+
 
 ---
 
@@ -75,12 +78,12 @@
 | **E** o cliente não deve ser removido. |
 
 
-
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro de integridade referencial deve ser exibida. |
 | O cliente deve permanecer no sistema. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+[https://drive.google.com/file/d/1tioB-QMmxYxCJALWrRGqKBIsVpyZeFUF/view?usp=sharing]
 
 ---

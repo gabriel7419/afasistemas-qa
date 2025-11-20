@@ -23,6 +23,7 @@
 | O sistema deve exibir todos os dados gravados do cliente "3 - JOSE SILVA". |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1GjHf3cp3JElxkr7pgLDzdWZCh191jCit/view?usp=sharing]
 
 ---
 
@@ -52,6 +53,7 @@
 | O relatório de "Contas a Receber" deve ser gerado com os dados corretos do cliente e da dívida. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1Hcc00QZZVAtPaTl3K0ssJSzRB9448qyI/view?usp=sharing]
 
 ---
 
@@ -79,6 +81,7 @@
 | Uma mensagem de erro "não encontrado" deve ser exibida. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1ztZOImOnhy3Luifx2bpsnzAE5gP9ht7w/view?usp=sharing]
 
 ---
 
@@ -105,3 +108,4 @@
 | O acesso às guias de crédito e dependentes deve estar oculto até a configuração. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/19yRZt-4pDMXEVo-RlSl-P7HrXWGEtBs7/view?usp=sharing]

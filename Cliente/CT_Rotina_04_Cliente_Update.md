@@ -25,6 +25,7 @@
 | As novas guias devem aparecer no cadastro do cliente, permitindo acesso às funções. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1tQ0gbBTGot39yW_bzTSzy18wQD7yAwkl/view?usp=sharing]
 
 ---
 
@@ -53,6 +54,7 @@
 | O valor do "Limite de Crédito" deve ser atualizado e persistido no cadastro. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1tQ0gbBTGot39yW_bzTSzy18wQD7yAwkl/view?usp=sharing]
 
 ---
 
@@ -79,6 +81,8 @@
 | A alteração de configuração deve ser bloqueada sem a autenticação correta. |
 
 **CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+[https://drive.google.com/file/d/1VhKv7zg23UgM031loMuRdq0XIjSoH5Gp/view?usp=sharing]
  -> O sistema não apresenta o comportamento esperado, congelando após as 3 tentaitivas. ALém disso, não há espeficação na entrada o usuário - se está vazia ou incorreta. 
+
 
 ---
