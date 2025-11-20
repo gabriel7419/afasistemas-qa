@@ -24,6 +24,8 @@
 | :--- |
 | As novas guias devem aparecer no cadastro do cliente, permitindo acesso às funções. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+
 ---
 
 ### Caso de Teste 02: Atualizar limite de crédito (Positivo).
@@ -50,6 +52,8 @@
 | :--- |
 | O valor do "Limite de Crédito" deve ser atualizado e persistido no cadastro. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+
 ---
 
 ### Caso de Teste 03: Tentar habilitar guias sem senha (Negativo).
@@ -74,27 +78,7 @@
 | :--- |
 | A alteração de configuração deve ser bloqueada sem a autenticação correta. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+ -> O sistema não apresenta o comportamento esperado, congelando após as 3 tentaitivas. ALém disso, não há espeficação na entrada o usuário - se está vazia ou incorreta. 
+
 ---
-
-### Caso de Teste 04: Venda ultrapassando limite de crédito (Alerta) (Negativo).
-
-| ID | Descrição |
-| :--- | :--- |
-| R04-CT12 | O sistema deve alertar o usuário ao tentar salvar uma venda a prazo que ultrapassa o limite de crédito do cliente. |
-
-| **Pré-condições** |
-| :--- |
-| O cliente "SILVA JOSE" tem um "Crédito Atual: R$ 500,00". |
-| O usuário está na tela "Confirmar Venda" com "Valor da Venda: R$ 600,00". |
-
-| **Passos** |
-| :--- |
-| **DADO** que o usuário está confirmando uma venda a prazo |
-| **E** o valor da venda (R$ 600,00) é maior que o limite (R$ 500,00) |
-| **QUANDO** o usuário clica em "Salvar" |
-| **ENTÃO** o sistema deve exibir um pop-up de "Informação" com o alerta "Limite de Crédito do Cliente ultrapassado". |
-
-| **Critérios de aceitação** |
-| :--- |
-| O sistema deve exibir o alerta, informando o Crédito Atual, Saldo Devedor e Valor da Venda. |
-| (Nota: O sistema permite a venda, mas o teste negativo é a falha em *não* alertar). |

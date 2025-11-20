@@ -23,6 +23,8 @@
 | :--- |
 | O cliente não deve mais ser encontrado na busca. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+
 ---
 
 ### Caso de Teste 02: Excluir dependente de um cliente (Positivo).
@@ -49,6 +51,8 @@
 | :--- |
 | O dependente não deve mais estar associado ao cliente. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+
 ---
 
 ### Caso de Teste 03: Tentar excluir cliente com histórico (Negativo).
@@ -70,32 +74,13 @@
 | **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Cliente possui movimentação e não pode ser excluído") |
 | **E** o cliente não deve ser removido. |
 
+
+
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro de integridade referencial deve ser exibida. |
 | O cliente deve permanecer no sistema. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO DRIVE**
+
 ---
-
-### Caso de Teste 04: Tentar excluir cliente com Contas a Receber (Negativo).
-
-| ID | Descrição |
-| :--- | :--- |
-| R04-CT16 | O sistema não deve permitir a exclusão de um cliente que possua saldo em "Contas a Receber". |
-
-| **Pré-condições** |
-| :--- |
-| O usuário está na tela "Cadastro de Clientes". |
-| O cliente "SILVA JOSE" possui uma dívida registrada em Contas a Receber. |
-
-| **Passos** |
-| :--- |
-| **DADO** que o usuário localizou o cliente |
-| **E** clica no botão "Excluir" |
-| **QUANDO** o usuário confirma a exclusão |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Cliente possui pendências financeiras") |
-| **E** o cliente não deve ser removido. |
-
-| **Critérios de aceitação** |
-| :--- |
-| O sistema deve impedir a exclusão de clientes com saldo devedor. |

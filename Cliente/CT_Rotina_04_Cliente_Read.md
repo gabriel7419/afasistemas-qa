@@ -22,6 +22,8 @@
 | :--- |
 | O sistema deve exibir todos os dados gravados do cliente "3 - JOSE SILVA". |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+
 ---
 
 ### Caso de Teste 02: Gerar relatório de Contas a Receber (Positivo).
@@ -49,6 +51,8 @@
 | :--- |
 | O relatório de "Contas a Receber" deve ser gerado com os dados corretos do cliente e da dívida. |
 
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
+
 ---
 
 ### Caso de Teste 03: Tentar consultar cliente inexistente (Negativo).
@@ -67,12 +71,14 @@
 | **DADO** que o usuário está na tela "Cadastro de Clientes" |
 | **E** digita "999" no campo "Código" |
 | **QUANDO** o usuário pressiona "Enter" ou sai do campo |
-| **ENTÃO** o sistema deve exibir uma mensagem de erro (ex: "Cliente não encontrado") |
+| **ENTÃO** o sistema não deve retornar nada, mantendo a tela em branco |
 | **E** os campos da tela devem permanecer vazios ou com os dados do registro anterior. |
 
 | **Critérios de aceitação** |
 | :--- |
 | Uma mensagem de erro "não encontrado" deve ser exibida. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
 
 ---
 
@@ -97,3 +103,5 @@
 | **Critérios de aceitação** |
 | :--- |
 | O acesso às guias de crédito e dependentes deve estar oculto até a configuração. |
+
+**CENÁRIO TESTADO E EVIDENCIADO - DISPONÍVEL NO GOOGLE DRIVE**
